@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding vowel number</title>
+</head>
+<body>
+    <script>
+        let vowel = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
+        function countVowels(sentense){
+            let count = 0;
+            let letters = Array.from(sentense);
+
+            letters.forEach(function(value){
+                if (vowel.includes(value)){
+                    count ++;
+                }
+            });
+            return count;
+        }
+
+
+        console.log(countVowels("I love Bangladesh. I'm hurayra. "));
+
+    </script>
+</body>
+</html>
